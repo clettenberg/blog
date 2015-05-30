@@ -14,10 +14,12 @@ env:
   - FTP_USER=cacq
   - FTP_PASSWORD=password
 after_success:
-- chmod 600 .travis/id_sls
-- ssh-add .travis/id_sls
+- chmod 600 .travis/id_rsa
+- ssh-add .travis/id_rsa
 - git remote add deploy https://slsapp.com/git/clettenberg/blog-18.git
-- git push deploy master
+- git push deploy
 before_install:
+- openssl aes-256-cbc -K $encrypted_13783f0e0768_key -iv $encrypted_13783f0e0768_iv
+  -in .travs/id_rsa.enc -out .travs/id_rsa -d
 - openssl aes-256-cbc -K $encrypted_13783f0e0768_key -iv $encrypted_13783f0e0768_iv
   -in .travis/id_sls.enc -out .travis/id_sls -d
