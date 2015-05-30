@@ -10,3 +10,4 @@ github_username:  cacqw7
 
 # Build settings
 markdown: kramdown
+exclude: [vendor]
