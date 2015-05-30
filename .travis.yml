@@ -21,3 +21,5 @@ after_success:
 before_install:
 - openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
   -in id_sls.enc -out .travis/id_sls -d
+addons:
+- 108.163.203.146:1234
