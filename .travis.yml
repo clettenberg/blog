@@ -14,10 +14,10 @@ env:
 before_install:
 - openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
   -in sloops.enc -out .travis/sloops -d
-- git config --global user.name Chase Clettenberg
+- git config --global user.name clettenberg@gmail.com
 - git config --global user.email clettenberg@gmail.com
-- echo -e "Host 108.163.203.146\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- echo -e "Host slsapp.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host [108.163.203.146]:1234\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host [slsapp.com]:1234\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 after_success:
 - chmod 600 .travis/sloops
 - ssh-add .travis/sloops
@@ -25,5 +25,5 @@ after_success:
 - git push deploy
 addons:
   ssh_known_hosts:
-  - 108.163.203.146
-  - slsapp.com
+  - [108.163.203.146]:1234
+  - [slsapp.com]:1234
