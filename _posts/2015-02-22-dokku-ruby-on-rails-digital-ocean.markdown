@@ -6,7 +6,7 @@ title: Dokku + Ruby on Rails + Digital Ocean
 author: Chase Clettenberg
 author_login: clettenberg
 author_email: clettenberg@gmail.com
-author_url: http://www.cclettenberg.com
+author_url: http://github.com/cacqw7
 date:   2015-05-28 15:54:14
 categories: ruby-on-rails digital-ocean dokku
 ---

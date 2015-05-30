@@ -6,7 +6,7 @@ title: WordPress Command Line Interface
 author: Chase Clettenberg
 author_login: clettenberg
 author_email: clettenberg@gmail.com
-author_url: http://www.cclettenberg.com
+author_url: http://github.com/cacqw7
 date: '2014-07-27 19:17:16 -0500'
 categories:
 - mac
@@ -39,7 +39,7 @@ If you use WordPress for your blog, you need to use WP-CLI (WordPress Command Li
 **[Follow these instructions to install wp-cli](http://wp-cli.org/)**
 
 Now, updating your WordPress version is as easy as
-		
+
 	wp core update
 
 You can also update your themes or plugins straight from the command line.
@@ -47,7 +47,7 @@ You can also update your themes or plugins straight from the command line.
 You can update individually or you can use “–all” to update the all at once.
 
 For example, to update your ‘googleanalytics’ plugin, navigate to your plugins folder and type
-		
+
 	wp plugin update googleanalytics
 
 If you’d like to update all plugins in the directory type
