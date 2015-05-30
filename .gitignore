@@ -2,4 +2,4 @@ _site
 .sass-cache
 id_rsa
 .DS_Store
-sloops
+_config.yml

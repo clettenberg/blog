@@ -11,3 +11,13 @@ github_username:  cacqw7
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+
+ftp_host: 'ssh.phx.nearlyfreespeech.net'
+ftp_dir: '/home/public'
+ftp_passive: false
+
+# optional
+ftp_port: 22                  # default 21
+ftp_username: 'cacqw7_clettenberg'     # default read from stdin
+ftp_password: 'zatQDDoYTUeX;ieXsZmAL@6nUQZciLNBvvwNRGvTG3apDgwEgV' # default read from stdin
+ftp_secure: true              # default false

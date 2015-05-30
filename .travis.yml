@@ -1,6 +1,6 @@
 language: ruby
 rvm: 2.1
-install: gem install jekyll html-proofer
+install: gem install jekyll html-proofer glynn
 script: jekyll build && htmlproof ./site
 branches:
   only:
@@ -10,19 +10,8 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+after_succcess:
+- glynn
 before_install:
-- git config --global user.name clettenberg@gmail.com
-- git config --global user.email clettenberg@gmail.com
-- echo -e "Host [108.163.203.146]:1234\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- echo -e "Host [slsapp.com]:1234\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-addons:
-  ssh_known_hosts:
-  - 108.163.203.146:1234
-  - slsapp.com:1234
-deploy:
-  provider: heroku
-  api_key:
-    secure: UW0x5NngcychZP53dlswO7+zwZMNlk0iP0SzgVnpiVadGMj7kTmAYOobTWqpkJXoUS3EzwNtck+AEPc2xKS6hJ0zY2uOF0mZdgzj2qGahmtJqFvCGP3Yv1D3J5KsMjuOOUXVYL+tHmdjPZ2w8jBvXRId/6r/3UhSFrIAePFPzzkoDYKIE+0hGlcMQTACzGp6A9TMyoxEHicEEilNY2MK3vox21wZlMo4jAY48/DaJz23E1hSSzn4sEkWbiHpHzi1SsfiAwrn1tQ+W76uMNa3O9MsZGh3dT8+ekHrGThcZ1c/X2gkNpfH7T7DyNJc0vRr2BIv6u2Qv8qtOWUq0LKQtliNXKBGcUDwbG6BVVL2y+SU7M+jLgrMgQewEhkxiTk3hhC2rzmcF9KzDvIpWUej9+CPbbpAtruGgbRgwQy2lkGeJZZvVxnnw7L8mnK0inbAGLz428dzr0TjshEMPZyWEncqaDlU80JjTbOrEiVgU7P6UjdFdFEBFJsvFVHAnKB5swdmbWeAkYHHwP1lmiQJYIu6HGr0TOHDukHArzdVfkVeoFNBZXDnquZZSvJt60uSfROtgFzQTXVvsg8qm48XiE5MTu5bE4fHoBiaBj4/cEg5e7tLrNPj1ifTbeFV57KO3bxLnAO3qrN2vTM+gzCzKR9ArRkzfAzfIaPcYjehZQk=
-  app: cclettenberg
-  on:
-    repo: cacqw7/blog
+- openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
+  -in _config.yml.enc -out _config.yml -d
