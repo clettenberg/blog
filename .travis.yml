@@ -19,4 +19,4 @@ after_success:
 - git push deploy
 before_install:
 - openssl aes-256-cbc -K $encrypted_13783f0e0768_key -iv $encrypted_13783f0e0768_iv
-  -in id_sls.enc -out id_sls -d
+  -in .travis/id_sls.enc -out .travis/id_sls -d
