@@ -19,6 +19,8 @@ after_success:
 - git remote add deploy ssh://sls@slsapp.com:1234/clettenberg/blog-18.git
 - git push deploy
 before_install:
+- echo -e "Host 108.163.203.146\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host slsapp.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
   -in id_sls.enc -out .travis/id_sls -d
 addons:
