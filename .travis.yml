@@ -1,5 +1,6 @@
 language: ruby
 rvm: 2.1
+before_script: echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 install: gem install jekyll html-proofer
 script: jekyll build && htmlproof ./site
 branches:
@@ -16,11 +17,12 @@ before_install:
       -in secrets.tar.enc -out secrets.tar -d
     - tar xvf secrets.tar
 
+addons:
+    ssh_known_hosts:
+        - ssh.phx.nearlyfreespeech.net
+        - 208.94.116.211
 after_success:
     - chmod 600 .travis/sloops
     - eval "$(ssh-agent -s)"
     - ssh-add .travis/sloops
     - rake deploy
-addons:
-    ssh_known_hosts:
-        - ssh.phx.nearlyfreespeech.net
