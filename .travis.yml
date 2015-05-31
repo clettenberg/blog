@@ -16,7 +16,7 @@ before_install:
       -in secrets.tar.enc -out secrets.tar -d
     - tar xvf secrets.tar
 
-after_succcess:
+after_success:
     - chmod 600 .travis/id_rsa
     - ssh-add .travis/id_rsa
     - rake deploy
