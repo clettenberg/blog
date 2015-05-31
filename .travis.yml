@@ -1,6 +1,6 @@
 language: ruby
 rvm: 2.1
-install: gem install jekyll html-proofer glynn
+install: gem install jekyll html-proofer
 script: jekyll build && htmlproof ./site
 branches:
   only:
@@ -17,6 +17,6 @@ before_install:
     - tar xvf secrets.tar
 
 after_success:
-    - chmod 600 sloops
-    - ssh-add sloops
+    - chmod 600 .travis/sloops
+    - ssh-add .travis/sloops
     - rake deploy
