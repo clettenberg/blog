@@ -18,6 +18,6 @@ after_succcess:
 - rake deploy
 before_install:
 - openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
-  -in sloops.enc -out .travis/sloops -d
-- openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
   -in Rakefile.enc -out Rakefile -d
+- openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
+  -in sloops.enc -out .travis/sloops -d
