@@ -10,11 +10,13 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-after_succcess:
-- chmod 600 .travis/id_rsa
-- ssh-add .travis/id_rsa
-- rake deploy
+
 before_install:
-- openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
-  -in secrets.tar.enc -out secrets.tar -d
-- tar xvf secrets.tar
+    - openssl aes-256-cbc -K $encrypted_dc941821cb90_key -iv $encrypted_dc941821cb90_iv
+      -in secrets.tar.enc -out secrets.tar -d
+    - tar xvf secrets.tar
+
+after_succcess:
+    - chmod 600 .travis/id_rsa
+    - ssh-add .travis/id_rsa
+    - rake deploy
