@@ -16,6 +16,8 @@ a hip, new blogging engine powered by Markdown. Why make it easy on myself to
 simply install a new blog and put it on some server, when I could decide to learn
 continuous integration/deployment in the process.
 
+*I made this blog using everything I'm about to describe, so feel free to jump straight into the [source](https://github.com/cacqw7/blog).*
+
 **Tech Used**
 
  - [Jekyll](http://jekyllrb.com/) - Static Website Generator
@@ -23,6 +25,8 @@ continuous integration/deployment in the process.
  - [Travis CI](https://travis-ci.org/) - Continuous Integration and Deployment
  - [Html Proofer](https://github.com/gjtorikian/html-proofer) - Validate Static files
  - [NearlyFreeSpeech](https://www.nearlyfreespeech.net/) - Web Host
+
+
 
 ###NearlyFreeSpeech
 [NearlyFreeSpeech](http://nearlyfreespeech.net) is a great, low cost web host that I tend to use for any small scale personal projects. You can host a static site, like a Jekyll blog, for extremely cheap. 
