@@ -5,6 +5,6 @@ permalink: /about/
 ---
 Oklahoma native.
 
-Texas, Missouri, Seoul, Illinois transplant.
+Texas, Missouri, Seoul, and Illinois transplant.
 
 Currently a Ruby on Rails developer at [Concordia Publishing House](http://www.cph.org/)
