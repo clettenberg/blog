@@ -2,7 +2,7 @@
 title: clettenberg
 email: clettenberg@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-      rails.node.coffee
+      rails.coffee.coffee
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cclettenberg.com" # the base hostname & protocol for your site
 twitter_username: clettenberg
