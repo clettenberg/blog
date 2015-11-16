@@ -7,22 +7,9 @@ author: Chase Clettenberg
 author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
-categories: text-editor
+categories: tutorial
 date: '2014-02-27 08:34:59 -0600'
-
-categories:
-- web development
-- tutorial
-- AntiTutorial
-- resources
-tags:
-- tutorial
-- code
-- programming
-- programming learning resources
-- learn to code
-- computer science
-- coding
+tags: tutorial code programming programming-learning-resource learn-to-code computer-science coding
 comments:
 - id: 5
   author: 'Learn to Code by Doing: Put Down the Tutorial and Start a Project | Clettenberg'
@@ -35,7 +22,8 @@ comments:
 **This is a list of all of the different websites and forums that I’ve found useful. If you know of any that I don’t here, please feel free to comment or hit me up on twitter and I’ll be happy to add them.**
 
 ###Online Courses
-######These courses require no prior knowledge about computer science.
+
+##### These courses require no prior knowledge about computer science.
 
 [Harvard’s CS50 ](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x)
 
