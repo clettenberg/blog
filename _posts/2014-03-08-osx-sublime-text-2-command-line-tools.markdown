@@ -8,22 +8,8 @@ author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
 date: '2014-03-08 11:57:54 -0600'
-categories:
-- mac
-- tutorial
-- resources
-- dev environment
-tags:
-- mac
-- code
-- programming
-- sublime text 2
-- subl
-- command line tools
-- text editor
-- osx
-- dev environment
-- sublime text 2 command line tools
+categories: text-editor
+tags: mac code programming sublime text 2 subl command-line-tools text-editor osx dev environment sublime-text-2 command-line-tools
 comments: []
 ---
 As if you needed another reason to love [Sublime Text 2…](http://www.sublimetext.com/2)

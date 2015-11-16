@@ -8,28 +8,8 @@ author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
 date: '2014-07-27 19:17:16 -0500'
-categories:
-- mac
-- web development
-- tutorial
-- dev environment
-- WordPress
-- Blogging
-tags:
-- mac
-- web development
-- tutorial
-- codef
-- how to
-- programming
-- technology
-- computers
-- command line tools
-- osx
-- dev environment
-- wordpress
-- blogging
-- wordpress command line
+categories: cli mac web-development tutorial dev-environment WordPress Blogging
+tags: mac web-development tutorial codef how-to programming technology computers command-line-tools osx dev-environment wordpress blogging wordpress command-line
 comments: []
 ---
 If you use WordPress for your blog, you need to use WP-CLI (WordPress Command Line Interface). WP-CLI gives you a quick, easy, and customizable tool to keep your blog running smoothly. You can use the [vast amount of commands](http://wp-cli.org/commands/) that are already included, or make your own by just creating a new PHP class.

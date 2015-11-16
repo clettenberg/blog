@@ -8,25 +8,8 @@ author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
 date: '2015-01-12 02:27:59 -0600'
-categories:
-- mac
-- web development
-- tutorial
-- dev environment
-- command line
-tags:
-- mac
-- web development
-- code
-- how to
-- learning
-- programming
-- learn to code
-- coding
-- osx
-- dev environment
-- wordpress command line
-- bash alias
+categories: cli
+tags: mac web development code how-to learning programming learn-to-code coding osx dev environment wordpress-command-line bash-alias
 
 ---
 #Make Bash (Command Line) Aliases

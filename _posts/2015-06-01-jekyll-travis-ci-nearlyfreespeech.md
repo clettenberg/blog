@@ -8,7 +8,7 @@ author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://cclettenberg.com
 date:   2015-05-28 15:54:14
-categories: ruby-on-rails nearlyfreespeech jekyll blog travis-ci
+categories: ruby-on-rails
 ---
 
 I finally took the time to ditch my old WordPress blog and start fresh with

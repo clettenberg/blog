@@ -8,7 +8,7 @@ author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
 date:   2015-05-28 15:54:14
-categories: ruby-on-rails digital-ocean dokku
+categories: ruby-on-rails
 ---
 
 ### Using [Dokku](https://github.com/progrium/dokku) and [Digital Ocean](https://www.digitalocean.com/?refcode=e88ec69754d1) to create your own Heroku
