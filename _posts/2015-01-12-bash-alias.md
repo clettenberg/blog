@@ -21,27 +21,32 @@ With about three minutes of setup, you can save a huge amount of unnecessary typ
 
 From your root directory, open `.bash_profile` with your favorite text editor.
 
-	$ sudo nano .bash_profile
-
+{% highlight bash %}
+$ sudo nano .bash_profile
+{% endhighlight %}
 ###Add aliases
 
 Create aliases using the syntax: `alias='command here'`
 Example `.bash_profile`
 
-	if [ -f ~/.bashrc ];
-	then
-	   source ~/.bashrc
-	fi
+{% highlight bash %}
+if [ -f ~/.bashrc ];
+then
+   source ~/.bashrc
+fi
 
-	#aliases
-	sites='cd ~/Sites'
-	..='cd ..'
-	...='cd ../ ..'
+#aliases
+sites='cd ~/Sites'
+..='cd ..'
+...='cd ../ ..'
+{% endhighlight %}
 
 ###Save and Reload shell
 Save your file (Ctrl-O Ctrl-X for nano) and reload the shell by executing
 
-	$ source .bash_profile
+{% highlight bash %}
+$ source .bash_profile
+{% endhighlight %}
 
 ###And that's it!
 Happy coding!

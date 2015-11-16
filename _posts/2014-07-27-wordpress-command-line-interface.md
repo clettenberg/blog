@@ -20,7 +20,9 @@ If you use WordPress for your blog, you need to use WP-CLI (WordPress Command Li
 
 Now, updating your WordPress version is as easy as
 
-	wp core update
+{% highlight bash %}
+$ wp core update
+{% endhighlight %}
 
 You can also update your themes or plugins straight from the command line.
 
@@ -28,11 +30,15 @@ You can update individually or you can use “–all” to update the all at onc
 
 For example, to update your ‘googleanalytics’ plugin, navigate to your plugins folder and type
 
-	wp plugin update googleanalytics
+{% highlight bash %}
+$ wp plugin update googleanalytics
+{% endhighlight %}
 
 If you’d like to update all plugins in the directory type
 
-	wp plugin update --all
+{% highlight bash %}
+$ wp plugin update --all
+{% endhighlight %}
 
 You can do the same with your themes, just replace ‘plugin’ with ‘theme’.
 
