@@ -7,7 +7,7 @@ author: Chase Clettenberg
 author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
-date: '2014-07-27 19:17:16 -0500'
+date: '2014-07-27 19:17:16'
 categories: wordpress
 tags: mac web-development tutorial codef how-to programming technology computers command-line-tools osx dev-environment wordpress blogging wordpress command-line
 comments: []

@@ -8,7 +8,7 @@ author_login: clettenberg
 author_email: clettenberg@gmail.com
 author_url: http://github.com/cacqw7
 categories: tutorial
-date: '2014-02-27 08:34:59 -0600'
+date: '2014-02-27 08:34:59'
 tags: tutorial code programming programming-learning-resource learn-to-code computer-science coding
 comments:
 - id: 5
