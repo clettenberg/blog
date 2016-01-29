@@ -23,7 +23,9 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
+.highlighter-rouge {
+  background-color: #F5F5F5;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -125,6 +127,7 @@ blockquote {
 
 code {
     padding: 1px 5px;
+    font-size: 14px;
 }
 
 pre {

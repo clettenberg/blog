@@ -1,5 +1,5 @@
 # Site settings
-title: clettenberg
+title: chase.clettenberg
 email: clettenberg@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
       rails.coffee.coffee
@@ -11,3 +11,7 @@ github_username:  cacqw7
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
