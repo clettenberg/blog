@@ -9,4 +9,4 @@ Oklahoma native.
 
 Texas, Missouri, Seoul, and Illinois transplant.
 
-Currently a Ruby on Rails developer at [Concordia Publishing House](http://www.cph.org/)
+Currently a Ruby on Rails developer at [Concordia Publishing House](https://github.com/cph)

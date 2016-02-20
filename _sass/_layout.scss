@@ -192,12 +192,14 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    border-bottom: 0.5px solid lighten($brand-color, 40%);
 }
 
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    margin-bottom: 10px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -236,4 +238,5 @@
   float: right;
   height: 140px;
   width: 140px;
+  border-radius: 5px;
 }
