@@ -17,7 +17,6 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -82,7 +81,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+
 }
 
 
@@ -183,15 +182,19 @@ pre {
  * Icons
  */
 .icon {
+    margin-bottom: -35px;
 
     > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+        line-height: 45px;
 
         path {
             fill: $grey-color;
         }
     }
+}
+
+@each $icon in ei-sc-github, ei-sc-twitter, ei-question, ei-envelope {
+  .icon--#{$icon} {
+    fill: $icon-fill-color;
+  }
 }
