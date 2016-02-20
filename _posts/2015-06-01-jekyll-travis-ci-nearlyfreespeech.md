@@ -57,7 +57,7 @@ Create a `.travis.yml` file
 language: ruby
 rvm: 2.2.1
 install: gem install jekyll html-proofer
-script: ./script/cibuild
+script: jekyll build && ./script/cibuild
 branches:
   #any branches you'd like Travis CI to test.
   only:

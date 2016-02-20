@@ -1,7 +1,7 @@
 language: ruby
 rvm: 2.3.0
 install: gem install jekyll html-proofer
-script: ./script/cibuild
+script: jekyll build && ./script/cibuild
 branches:
   only:
   - pages
