@@ -2,6 +2,5 @@
 
 require 'html/proofer'
 HTML::Proofer.new("./_site", {
-  :typhoeus => {
-  :headers => { "User-Agent" => "Mozilla/5.0 (compatible; My New User-Agent)" }
-}}).run
+  :url_ignore => [/linkedin.com/],
+}).run
