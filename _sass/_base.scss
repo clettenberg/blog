@@ -193,7 +193,7 @@ pre {
     }
 }
 
-@each $icon in ei-sc-github, ei-sc-twitter, ei-question, ei-envelope {
+@each $icon in ei-sc-github, ei-sc-twitter, ei-sc-linkedin, ei-question, ei-envelope {
   .icon--#{$icon} {
     fill: $icon-fill-color;
   }
