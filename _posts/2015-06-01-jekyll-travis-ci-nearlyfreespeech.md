@@ -28,10 +28,10 @@ continuous integration/deployment in the process.
 
 
 
-###NearlyFreeSpeech
+### NearlyFreeSpeech
 [NearlyFreeSpeech](http://nearlyfreespeech.net) is a great, low cost web host that I tend to use for any small scale personal projects. You can host a static site, like a Jekyll blog, for extremely cheap.
 
-###Jekyll
+### Jekyll
 [Jekyll](http://jekyllrb.com/) is a static website generator powered by Ruby. Customizable and easy to set up, supports Markdown and get's your blog into version control.
 
 {% highlight bash %}
@@ -44,12 +44,10 @@ $ ~/myblog $ jekyll serve
 
 Jekyll has some great [docs](http://jekyllrb.com/docs/usage/) that can help you get your blog up and running.
 
-###Travis CI and HTML-Proofer
-[Travis CI](https://travis-ci.org/) is a continuous integration platform that allows us to build, test and deploy our blog automatically whenever changes are pushed to GitHub.
+### Travis CI and HTML-Proofer
+[Travis CI](https://travis-ci.org/) is a continuous integration platform that makes it easy to build, test and deploy whenever changes are pushed to GitHub. The `cibuild` script will use html-proofer to check the `_site` folder for any errors, such as dead links.
 
-Travis CI is going to run html-prooferto check your _site folder for any errors such as dead links.
-
-Add `html-proofer` to your gemfile
+Add `html-proofer` to the `Gemfile`
 {% highlight ruby %}
 gem "html-proofer"
 {% endhighlight %}
@@ -59,7 +57,7 @@ Create a `.travis.yml` file
 language: ruby
 rvm: 2.2.1
 install: gem install jekyll html-proofer
-script: jekyll build && htmlproof ./_site
+script: ./script/cibuild
 branches:
   #any branches you'd like Travis CI to test.
   only:
@@ -70,7 +68,7 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-##before installing app
+## before installing app
 ## Turn off strict host checking
 ## unzip encrypted ssh private key and _config.yml
 before_install:
@@ -85,6 +83,16 @@ after_success:
     - ssh-add .travis/ssh_key
     - rake deploy
 {% endhighlight %}
+
+Create a Ruby script at `script/cibuild`
+{% highlight ruby %}
+#!/usr/bin/env ruby
+
+require 'html/proofer'
+HTML::Proofer.new("./_site").run
+
+{% endhighlight %}
+
 I'm using `rsync` to deploy my `_site` folder to my [NearlyFreeSpeech](http://nearlyfreespeech.net) `/home/public/` folder.
 
 Sample `Rakefile` file
@@ -97,8 +105,7 @@ end
 {% endhighlight %}
 
 
-
-To keep your ssh key and Rakefile settings out of the repo, you need to zip them together and then [encrypt them so TravisCI](http://docs.travis-ci.com/user/encrypting-files/) can unencrypt them.
+To keep ssh keys and `Rakefile` settings out of the repo, zip them together and then [encrypt them](http://docs.travis-ci.com/user/encrypting-files/) so TravisCI can decrypt them.
 
 First login to `travis`
 {% highlight bash %}
@@ -108,28 +115,29 @@ $ travis login
 Zip the files and encrypt them
 
 {% highlight bash %}
-#saves files .travis/ssh_key and Rakefile to secrets.tar
+# saves files .travis/ssh_key and Rakefile to secrets.tar
 $ tar cvf secrets.tar Rakefile .travis/ssh_key
-#encrypts and automatically adds it to .travis.yml
+# encrypts and automatically adds it to .travis.yml
 $ travis encrypt-file secrets.tar --add
 {% endhighlight %}
 
-**Make sure to add any encrypted files to your .gitignore!**
+**Make sure to add any encrypted files to `.gitignore`!**
 
-###Recap!
+### Recap!
 
-* Create your blog through the `jekyll` command line constructer.
+* Create a blog with the `jekyll` command line constructer.
 * Add blog content and add it to a git repo.
-* Signup for [Travis CI](http://travis-ci.org) and enable your blog repo.
-* Add a .travis.yml file
-* Add Rakefile with nearly free speech username
-* Edit _config.yml
-* [Create an ssh key](https://help.github.com/articles/generating-ssh-keys/) and add the public key to your NearlyFreeSpeech blog.
+* Signup for [Travis CI](http://travis-ci.org) and enable the blog repo on [GitHub](https://github.com).
+* Add a `.travis.yml` file
+* Create a script for `html-proofer`
+* Add `Rakefile` with NearlyFreeSpeech username
+* Edit `_config.yml`
+* [Create an ssh key](https://help.github.com/articles/generating-ssh-keys/) and add the public key to the NearlyFreeSpeech blog.
 * Encrypt `.travis/private_key` and `Rakefile`
-* Add and commit all your changes.
-* Push your branch to GitHub and let Travis CI take care of testing and deploying.
+* Add and commit all the changes.
+* Push the branch to GitHub and let Travis CI take care of testing and deploying.
 
-Then you can brag about build passing like all the cook kids.
+Now you can brag about build passing like all the cook kids.
 
 [![Build Status](https://travis-ci.org/cacqw7/blog.svg?branch=master)](https://travis-ci.org/cacqw7/blog)
 
