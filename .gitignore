@@ -4,3 +4,4 @@ sloops
 .DS_Store
 Rakefile
 secrets.tar
+_deploy.yml
