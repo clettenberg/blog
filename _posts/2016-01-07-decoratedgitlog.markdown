@@ -30,7 +30,7 @@ Date:   Thu Jan 7 22:01:35 2016 -0600
 
 Unsurprisingly, there are plenty of formatting options in the [documentation](http://git-scm.com/docs/git-log).
 
-## Here are a few aliases that I've found useful:
+### Here are a few aliases that I've found useful:
 
 
 #### **Branch and commit message**

@@ -14,7 +14,7 @@ comments: []
 ---
 If you use WordPress for your blog, you need to use WP-CLI (WordPress Command Line Interface). WP-CLI gives you a quick, easy, and customizable tool to keep your blog running smoothly. You can use the [vast amount of commands](http://wp-cli.org/commands/) that are already included, or make your own by just creating a new PHP class.
 
-###Note: WP-CLI only works through SSH
+### Note: WP-CLI only works through SSH
 
 **[Follow these instructions to install wp-cli](http://wp-cli.org/)**
 

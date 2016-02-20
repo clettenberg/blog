@@ -12,7 +12,7 @@ categories: ember-js
 tags: ember-js ruby-on-rails api torii oauth github
 ---
 
-For a recent [Ember.js](http://emberjs.com) + Rails API project, I needed to set up OAuth with support for [GitHub](https://developer.github.com/v3/oauth/). I used the great [Torii](https://github.com/Vestorly/torii) library along with EmberCLI. This a rough, not quite finished version. There are still some #TODOs and refactoring to get done, but I thought I'd go ahead and post how to get it working.
+For a recent [Ember.js](http://emberjs.com) + Rails API project, I needed to set up OAuth with support for [GitHub](https://developer.github.com/v3/oauth/). I used the [Torii](https://github.com/Vestorly/torii) library along with EmberCLI. This a rough, not quite finished version.
 
 I'm using
 
@@ -27,7 +27,7 @@ _**Before you get started**_
 
 *Go to `Settings > Applications > Developer Applications`*
 
-*To get things up and running on your development machine, just set `Homepage URL` and `Authorization callback URL` to
+*To get things up and running in development, just set `Homepage URL` and `Authorization callback URL` to
 `http://localhost:4200`*
 
 

@@ -21,7 +21,7 @@ comments:
 ---
 **This is a list of all of the different websites and forums that I’ve found useful. If you know of any that I don’t here, please feel free to comment or hit me up on twitter and I’ll be happy to add them.**
 
-###Online Courses
+### Online Courses
 
 ##### These courses require no prior knowledge about computer science.
 
@@ -33,7 +33,7 @@ comments:
 
 * I didn’t want to list a specific class because Coursera’s course catalog is constantly changing, but if you search for CS you’re bound to find a class or two that you’ll find useful. Reddit user dhawal has some great posts of free online classes.
 
-###Online Tutorials
+### Online Tutorials
 
 [Codecademy](http://www.codecademy.com/)
 

@@ -62,7 +62,7 @@ $ git push dokku master
 
 This will deploy your app to your droplet with the domain name **projectname.example.com**
 
-###Setup PostgreSQL Database
+### Setup PostgreSQL Database
 
 SSH into your droplet and install the [Postgres Plugin](https://github.com/Kloadut/dokku-pg-plugin)
 

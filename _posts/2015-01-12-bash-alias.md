@@ -12,19 +12,19 @@ categories: cli
 tags: mac web development code how-to learning programming learn-to-code coding osx dev environment wordpress-command-line bash-alias
 
 ---
-#Make Bash (Command Line) Aliases
+# Make Bash (Command Line) Aliases
 If you do even a little work on the command line (which you should), bash aliases are going to make your life infinitely easier.
 
 With about three minutes of setup, you can save a huge amount of unnecessary typing.
 
-###Edit `.bash_profile`
+### Edit `.bash_profile`
 
 From your root directory, open `.bash_profile` with your favorite text editor.
 
 {% highlight bash %}
 $ sudo nano .bash_profile
 {% endhighlight %}
-###Add aliases
+### Add aliases
 
 Create aliases using the syntax: `alias='command here'`
 Example `.bash_profile`
@@ -41,12 +41,12 @@ sites='cd ~/Sites'
 ...='cd ../ ..'
 {% endhighlight %}
 
-###Save and Reload shell
+### Save and Reload shell
 Save your file (Ctrl-O Ctrl-X for nano) and reload the shell by executing
 
 {% highlight bash %}
 $ source .bash_profile
 {% endhighlight %}
 
-###And that's it!
+### And that's it!
 Happy coding!
