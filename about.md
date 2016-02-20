@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<img id="about-img" src="https://avatars3.githubusercontent.com/u/3615754?v=3&amp;" alt="chase">
+<img id="about-img" src="{{site.url}}/assets/avatar.jpeg" alt="chase">
 
 Oklahoma native.
 

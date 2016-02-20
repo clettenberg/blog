@@ -8,10 +8,4 @@ url: "http://cclettenberg.com" # the base hostname & protocol for your site
 twitter_username: clettenberg
 github_username:  cacqw7
 
-# Build settings
-markdown: kramdown
 exclude: [vendor]
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
