@@ -58,6 +58,7 @@ GEM
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     pkg-config (1.1.7)
+    rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -79,6 +80,7 @@ DEPENDENCIES
   jekyll
   liquid_pluralize
   liquid_reading_time
+  rake
 
 BUNDLED WITH
    1.11.2

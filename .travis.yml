@@ -1,7 +1,7 @@
 language: ruby
 rvm: 2.3.0
 install: bundle install
-script: jekyll build && ./script/cibuild
+script: rake test
 branches:
   only:
   - pages
@@ -17,8 +17,6 @@ before_install:
       -in secrets.tar.enc -out secrets.tar -d
     - tar xvf secrets.tar
 
-# addons:
-#     ssh_known_hosts: 208.94.116.211
 after_success:
     - chmod 600 .travis/sloops
     - eval "$(ssh-agent -s)"

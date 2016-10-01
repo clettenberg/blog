@@ -2,6 +2,5 @@ _site
 .sass-cache
 sloops
 .DS_Store
-Rakefile
 secrets.tar
 _deploy.yml
