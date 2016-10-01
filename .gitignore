@@ -4,3 +4,4 @@ sloops
 .DS_Store
 secrets.tar
 _deploy.yml
+tmp/
