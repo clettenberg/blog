@@ -1,5 +1,7 @@
 require 'html-proofer'
 
+task default: %w[test]
+
 task :deploy do
   user = 'cacqw7_clettenberg'
   server = 'ssh.phx.nearlyfreespeech.net'
