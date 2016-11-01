@@ -5,4 +5,4 @@ sloops
 secrets.tar
 _deploy.yml
 tmp/
-.travis
+.travis/
