@@ -6,3 +6,4 @@ secrets.tar
 _deploy.yml
 tmp/
 .travis/
+.jekyll-cache/
