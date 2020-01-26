@@ -16,9 +16,10 @@ tags: sidekiq ruby-on-rails ruby background-processes sidkiq-pro sidekiq-batches
 
 End result using [Sidekiq Batches](https://github.com/mperham/sidekiq/wiki/Batches) and [progressbar.js](https://github.com/kimmobrunfeldt/progressbar.js):
 
-<img class="post-img" src="{{site.url}}/assets/progress.gif" alt="chase">
+![progress gif](/assets/img/progress.gif){: .post-img }
 
 #### Batches
+
 From the [docs](https://github.com/mperham/sidekiq/wiki), a batch is
 
 > a collection of jobs which can be monitored as a group. You can create a set of jobs to execute in parallel and then execute a callback when all the jobs are finished.
