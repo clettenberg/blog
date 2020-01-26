@@ -42,3 +42,22 @@ returns the new amount with tip included.
 ### Alert message with tip totals
 
 ![tip alert](/assets/img/tip_calculator/tip_alert.png){: .post-img }
+
+### Display totals in a table
+
+![table](/assets/img/tip_calculator/table.png){: .post-img }
+
+### Initial styling with [Bootstrap](https://getbootstrap.com/)
+
+![initial bootstrap](/assets/img/tip_calculator/bootstrap_initial.png){: .post-img }
+
+### Second pass styling with [Bootstrap](https://getbootstrap.com/)
+
+![second pass](/assets/img/tip_calculator/bootstrap_second.png){: .post-img }
+
+### More TODOs!
+
+* Only display the percentages when the button is clicked
+* Create a drop down to choose which percentage, rather than printing all of them.
+* Add a slider where you can choose the percentage tip you want to give, then click calculate
+* Have the slider update the totals on the screen as it's moved left and right.
